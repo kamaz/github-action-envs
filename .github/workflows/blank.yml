@@ -28,13 +28,12 @@ jobs:
       - name: Blah
         run: |
           echo "my_value=one" >> $GITHUB_ENV
-      
-      - name: Setup Environment
-        uses: ./.github/actions/install
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
         env:
-          NODE_AUTH_TOKEN: 'onetwothree'
+          NODE_AUTH_TOKEN: 'onetwotree'
 
       - name: Setup Environment
         uses: ./.github/actions/one
