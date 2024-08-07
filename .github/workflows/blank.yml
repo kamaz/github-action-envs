@@ -35,6 +35,13 @@ jobs:
         env:
           NODE_AUTH_TOKEN: 'onetwotree'
 
+      - name: INSTALL
+        uses: ./.github/actions/install
+        with: 
+          node-version: 20
+        env:
+          WHAT: hello
+
       - name: ONE
         uses: ./.github/actions/one
         env:
