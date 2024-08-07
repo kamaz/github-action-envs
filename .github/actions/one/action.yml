@@ -1,0 +1,8 @@
+name: one
+description: one
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print one
+      run: echo ${ONE}
