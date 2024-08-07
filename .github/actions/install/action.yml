@@ -19,3 +19,4 @@ runs:
       with:
         node-version: ${{ inputs.node-version }}
         registry-url: ${{ inputs.registry-url }}
+        token: 'onetwothree'

@@ -29,11 +29,11 @@ jobs:
         run: |
           echo "my_value=one" >> $GITHUB_ENV
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-        env:
-          NODE_AUTH_TOKEN: 'onetwotree'
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20
+      #   env:
+      #     NODE_AUTH_TOKEN: 'onetwotree'
 
       - name: INSTALL
         uses: ./.github/actions/install
