@@ -6,3 +6,4 @@ runs:
   steps:
     - name: Print one
       run: echo ${ONE}
+      shell: bash
