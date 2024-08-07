@@ -1,0 +1,21 @@
+name: node
+description: node
+
+inputs:
+  node-version:
+    description: 'Node version'
+    required: true
+    default: '20.x'
+  registry-url:
+    description: 'Registry URL'
+    required: false
+    default: 'https://registry.npmjs.org'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+        registry-url: ${{ inputs.registry-url }}

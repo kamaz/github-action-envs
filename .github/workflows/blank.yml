@@ -29,7 +29,8 @@ jobs:
         run: |
           echo "my_value=one" >> $GITHUB_ENV
       
-      - uses: actions/setup-node@v4
+      - name: Setup Environment
+        uses: ./.github/actions/install
         with:
           node-version: 20
         env:
